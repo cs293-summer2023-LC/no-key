@@ -15,4 +15,4 @@ jobs:
             username: ${{ secrets.SERVER_USERNAME }}
             password: ${{ secrets.SERVER_PASSWORD }}
             sourceDir: .
-            targetDir: /home/<yourUserName>/public_html/<yourProjectName>
+            targetDir: /home/${{ secrets.SERVER_USERNAME }}/public_html/<yourProjectName>
